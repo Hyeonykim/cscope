@@ -301,6 +301,9 @@ main(int argc, char **argv)
     struct sigaction winch_action;
 #endif
     mode_t orig_umask;
+
+    /* Enable caseless as always */
+    caseless = YES;
 	
     yyin = stdin;
     yyout = stdout;
